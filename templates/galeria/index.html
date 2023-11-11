@@ -16,10 +16,13 @@
         </ul>
     </section>
     <section class="galeria">
+        
         {% if dados %}
         {% for fotografia in dados %}
+        
         <div class="cards">
-            <h2 class="cards__titulo">Navegue pela galeria</h2>
+        <h2 class="cards__titulo">Navegue pela galeria</h2>
+
             <ul class="cards__lista">
                 <li class="card">
                     <a href="{% url 'imagem' fotografia.id %}">
